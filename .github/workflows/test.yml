@@ -12,7 +12,7 @@ jobs:
   build:
     strategy:
       matrix:
-        platform: [ubuntu-latest, macos-latest ]
+        platform: [ ubuntu-latest ]
     runs-on: ${{ matrix.platform }}
     steps:
       - uses: actions/checkout@v2
@@ -22,4 +22,4 @@ jobs:
           smalltalk-version: Pharo64-8.0
       - run: (sudo apt-get install build-essential gcc-multilib ; smalltalkci -s ${{ steps.smalltalkci.outputs.smalltalk-version }})
         shell: bash
-        timeout-minutes: 15
+        timeout-minutes: 25

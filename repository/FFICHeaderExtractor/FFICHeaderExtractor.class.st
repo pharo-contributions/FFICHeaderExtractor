@@ -10,7 +10,7 @@ Class {
 		'headersToInclude',
 		'compiler'
 	],
-	#category : 'FFICHeaderExtractor'
+	#category : #FFICHeaderExtractor
 }
 
 { #category : #accessing }
@@ -175,12 +175,14 @@ FFICHeaderExtractor >> ffiLibraryName [
 { #category : #'generating C program' }
 FFICHeaderExtractor >> generateCProgram [
 	"This method is the one that finally autogenereates the C program"
-	| stream | 
-	stream := StandardFileStream forceNewFileNamed: self cProgramFilename "'/Users/mariano/prueba.c'".
-	self writeCMainCommentOn: stream.
-	self writeCIncludesOn: stream.
-	self writeRestOfCFileOn: stream.
-	stream flush; close.
+	
+	self cProgramFilename asFileReference 
+		ensureDelete;
+		writeStreamDo: [ :stream |
+			self writeCMainCommentOn: stream.
+			self writeCIncludesOn: stream.
+			self writeRestOfCFileOn: stream.
+	]
 ]
 
 { #category : #accessing }

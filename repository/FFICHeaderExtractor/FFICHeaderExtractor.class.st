@@ -54,7 +54,7 @@ FFICHeaderExtractor >> buildMethodSource [
 	sourceStream tab; nextPutAll: '<platformName: '''; nextPutAll: FFISharedPool currentPlatformName; nextPutAll: ''' wordSize: '; nextPutAll: FFISharedPool currentWordSize asString; nextPutAll:'>'; cr.
 	ouput linesDo: [ :aLine | 
 		| array |
-		array := Compiler evaluate: aLine. 
+		array := self class environment compiler evaluate: aLine. 
 		((array first beginsWith: 'UNDEFINED') and: [ array third = 0 ])
 			ifTrue: [ 
 				"Undefined constants will be written in the method like this: 

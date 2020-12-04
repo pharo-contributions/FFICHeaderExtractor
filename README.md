@@ -198,7 +198,8 @@ You need to run the tests of the package `FFICHeaderExtractor-Tests`. For runnin
   - Tonel format conversion 
   - update doc
   - Version for  <= 8.0 Pharo
-- 
+- [v1.0.1](https://github.com/pharo-contribution/FFICHeaderExtractor/tree/v1.0.1) (2020-12-4)
+  - Removing dependency to StandardFileStream
 
 
 ## Possible future work

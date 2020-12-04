@@ -200,6 +200,9 @@ You need to run the tests of the package `FFICHeaderExtractor-Tests`. For runnin
   - Version for  <= 8.0 Pharo
 - [v1.0.1](https://github.com/pharo-contribution/FFICHeaderExtractor/tree/v1.0.1) (2020-12-4)
   - Removing dependency to StandardFileStream
+ - [v1.0.2](https://github.com/pharo-contribution/FFICHeaderExtractor/tree/v1.0.2) (2020-12-4)
+  - Removing dependency to Compiler
+  - Green tests
 
 
 ## Possible future work

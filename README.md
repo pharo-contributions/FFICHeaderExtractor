@@ -193,15 +193,15 @@ You need to run the tests of the package `FFICHeaderExtractor-Tests`. For runnin
 
 ## Change Log
 - [v0.1.0](https://github.com/marianopeck/FFICHeaderExtractor/tree/v0.1.0) (2016-01-27) First milestone release. Version for <= Pharo 8.0
-- [v1.0.0](https://github.com/pharo-contribution/FFICHeaderExtractor/tree/v1.0.0) (2020-12-4) 
+- [v1.0.0](https://github.com/pharo-contributions/FFICHeaderExtractor/tree/v1.0.0) (2020-12-4) 
   - Migration to Pharo-contribution 
   - Tonel format conversion 
   - update doc
   - Version for  <= 8.0 Pharo
-- [v1.0.1](https://github.com/pharo-contribution/FFICHeaderExtractor/tree/v1.0.1) (2020-12-4)
+- [v1.0.1](https://github.com/pharo-contributions/FFICHeaderExtractor/tree/v1.0.1) (2020-12-4)
   - Removing dependency to StandardFileStream
   - Version for Pharo 8.0
- - [v1.0.2](https://github.com/pharo-contribution/FFICHeaderExtractor/tree/v1.0.2) (2020-12-4)
+ - [v1.0.2](https://github.com/pharo-contributions/FFICHeaderExtractor/tree/v1.0.2) (2020-12-4)
   - Removing dependency to Compiler
   - Green tests
   - Version for Pharo 8.0 and 9.0
